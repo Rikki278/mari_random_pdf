@@ -288,8 +288,9 @@ function App() {
                   <Page 
                     pageNumber={currentPage} 
                     scale={scale} 
-                    renderTextLayer={true}
-                    renderAnnotationLayer={true}
+                    renderTextLayer={false}
+                    renderAnnotationLayer={false}
+                    devicePixelRatio={Math.min(window.devicePixelRatio || 1, 2)}
                     onRenderSuccess={onPageRenderSuccess}
                     className="pdf-page"
                   />
