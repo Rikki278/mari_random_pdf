@@ -293,6 +293,7 @@ function App() {
                     devicePixelRatio={Math.min(window.devicePixelRatio || 1, 2)}
                     onRenderSuccess={onPageRenderSuccess}
                     className="pdf-page"
+                    loading={<div className="pdf-page-skeleton"></div>}
                   />
                 </div>
               )}
@@ -358,6 +359,8 @@ function App() {
       )}
       
       {pdfFile ? renderDashboard() : renderUploadState()}
+      
+      <div className="version-mark">v1.1</div>
     </div>
   );
 }

@@ -530,3 +530,14 @@
   .controls { width: 100%; justify-content: space-between; padding: 0.5rem; }
   .page-indicator { min-width: auto; font-size: 0.85rem; }
 }
+
+.version-mark {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  font-family: 'Orbitron', monospace;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  opacity: 0.5;
+  pointer-events: none;
+}
