@@ -238,7 +238,7 @@ function App() {
               {allowRepeats ? (
                 <div style={{ height: '100%', width: '100%', background: 'linear-gradient(90deg, transparent, var(--accent-glow), transparent)', borderRadius: '4px', animation: 'shimmer 2s infinite' }}></div>
               ) : (
-                <div className="progress-bar-fill" style={{ width: `${progress}%`, backgroundColor: 'var(--success)' }}></div>
+                <div className="progress-bar-fill" style={{ width: `${progress}%` }}></div>
               )}
             </div>
           </div>
