@@ -360,7 +360,7 @@ function App() {
       
       {pdfFile ? renderDashboard() : renderUploadState()}
       
-      <div className="version-mark">v1.1</div>
+      <div className="version-mark">v1.2</div>
     </div>
   );
 }
