@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import { FileUp, Dice5, RefreshCw, ZoomIn, ZoomOut, ChevronLeft, ChevronRight, CheckCircle, FileText, ToggleLeft, ToggleRight } from 'lucide-react';
+import { FileUp, Dice5, RefreshCw, ZoomIn, ZoomOut, ChevronLeft, ChevronRight, CheckCircle, FileText } from 'lucide-react';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 import './App.css';
@@ -189,7 +189,6 @@ function App() {
   const renderDashboard = () => {
     const isCompleted = viewedPages.length === numPages && numPages > 0;
     const progress = numPages > 0 ? (viewedPages.length / numPages) * 100 : 0;
-    const remaining = numPages - viewedPages.length;
 
     if (isCompleted && !currentPage && !allowRepeats) {
       return (
