@@ -6,7 +6,10 @@ import 'react-pdf/dist/Page/TextLayer.css';
 import './App.css';
 
 // Set up the worker for react-pdf
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
 function App() {
   const [pdfFile, setPdfFile] = useState<File | null>(null);

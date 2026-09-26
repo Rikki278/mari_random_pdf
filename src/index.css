@@ -1,51 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;700;800&display=swap');
 
 :root {
-  /* Modern Premium Palette */
-  --bg-gradient: linear-gradient(135deg, #f6f8fb 0%, #e5eef9 100%);
-  --surface-glass: rgba(255, 255, 255, 0.7);
-  --surface-border: rgba(255, 255, 255, 0.5);
+  /* Acidweb Cosmic Theme */
+  --bg-gradient: linear-gradient(135deg, #05050d 0%, #080812 100%);
+  --surface-glass: rgba(12, 6, 20, 0.75);
+  --surface-border: rgba(182, 26, 109, 0.25);
   
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
   
-  --accent-color: #6366f1;
-  --accent-hover: #4f46e5;
-  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  --accent-glow: rgba(99, 102, 241, 0.4);
+  --accent-color: #ff1f8f;
+  --accent-hover: #b61a6d;
+  --accent-gradient: linear-gradient(135deg, #ff1f8f 0%, #b61a6d 40%, #7b2cbf 100%);
+  --accent-glow: rgba(182, 26, 109, 0.6);
   
-  --success: #10b981;
-  --success-glow: rgba(16, 185, 129, 0.4);
+  --success: #0ff;
+  --success-glow: rgba(0, 255, 255, 0.4);
   
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(182, 26, 109, 0.15);
   
   --radius-md: 12px;
   --radius-lg: 20px;
   --radius-full: 9999px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #020617 100%);
-    --surface-glass: rgba(30, 41, 59, 0.6);
-    --surface-border: rgba(255, 255, 255, 0.08);
-    
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    
-    --accent-color: #818cf8;
-    --accent-hover: #a5b4fc;
-    --accent-gradient: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
-    --accent-glow: rgba(129, 140, 248, 0.4);
-    
-    --success: #34d399;
-    --success-glow: rgba(52, 211, 153, 0.3);
-    
-    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-  }
 }
 
 * {
@@ -55,7 +34,7 @@
 }
 
 body {
-  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   background: var(--bg-gradient);
   background-attachment: fixed;
   color: var(--text-primary);
@@ -133,9 +112,9 @@ body::after {
   background: transparent; 
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.3); 
+  background: rgba(255, 31, 143, 0.3); 
   border-radius: var(--radius-full);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(148, 163, 184, 0.6); 
+  background: rgba(255, 31, 143, 0.6); 
 }
